@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mon Portfolio </title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header class="header">
+        <div class="logo"> Marina Kamel </div>
+          <!-- Burger icon -->
+         <div class="burger" id="burger">
+             <span></span>
+             <span></span>
+             <span></span>
+         </div>
+            <nav class="nav">
+                  <ul>
+                <li> <a href="../index.html"> Acceueil </a> </li>
+                <li> <a href="experiences.html" class="active"> Expériences </a> </li>
+                <li><a href="formations.html"> Formations </a> </li>
+                <li> <a href="competences.html"> Compétences</a> </li>
+                <li> <a href="contact.html"> Contact </a> </li>
+                
+                  </ul>
+            </nav>
+   </header>
+   <main>
+  <section id="experiences" class="exp">
+      
+      <h3> 💼 Expérience Professionnelle</h3>
+
+        <div class="job-card">
+            <h3>Adjointe Administrative <span>— Fady Mikhael Comptable, Saint-Hubert, QC</span></h3>
+            <p class="date">Mars 2020 – Aujourd’hui</p>
+            <ul>
+                <li>Accueillir et diriger les clients de manière professionnelle.</li>
+                <li>Créer et mettre à jour les dossiers clients.</li>
+                <li>Effectuer des tests sur les bases de données clients.</li>
+                <li>Collaborer à la création d’une page Web.</li>
+                <li>Préparer les factures et gérer les paiements.</li>
+            </ul>
+        </div>
+
+        <div class="job-card">
+            <h3>Spécialiste en Support Informatique <span>— 7G Seven Group Co., Égypte</span></h3>
+            <p class="date">Juin 2018 – Nov. 2019</p>
+            <ul>
+                <li>Répondre aux requêtes des usagers et les documenter.</li>
+                <li>Diagnostiquer postes, applications et réseau à distance.</li>
+                <li>Tester de nouveaux logiciels et appliquer les correctifs.</li>
+                <li>Support de premier niveau aux usagers TI et TIC.</li>
+            </ul>
+        </div>
+
+        <div class="job-card">
+            <h3>Stagiaire en Télécommunication <span>— Orange Égypte</span></h3>
+            <p class="date">Juin 2017 – Sep. 2017</p>
+            <ul>
+                <li>Support technique par téléphone et en personne.</li>
+                <li>Assister à la création d’outils collaboratifs (SharePoint).</li>
+                <li>Participer au déploiement d’applications.</li>
+            </ul>
+        </div>
+    </div>
+  </section>
+   </main>
+
+<footer>
+  <p>&copy; 2025 - Mon Portfolio</p>
+</footer>
+
+<script>
+const burger = document.getElementById("burger");
+const nav = document.querySelector(".nav");
+
+burger.addEventListener("click", () => {
+  nav.classList.toggle("active");
+  burger.classList.toggle("toggle"); // animation burger
+});
+
+
+</script>
+</body>
+</html>   

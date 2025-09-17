@@ -1,0 +1,183 @@
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/* Style global */
+body {
+    font-family: 'Poppins', sans-serif;
+   
+    width: 100%;
+    
+    overflow-x: auto;
+    overflow-y:auto;
+}
+
+/* ===== Header & Navigation ===== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:relative;
+    top: 0;
+    z-index: 100;
+    color: white;
+    background:linear-gradient(rgb(89, 89, 88), rgb(192, 183, 170)) ;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+header .logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(232, 227, 216);
+    padding: 15px;
+}
+
+.nav{
+    flex-grow: 1;
+   
+}
+
+
+.nav ul {
+    display: flex;
+    justify-content: right;
+    flex-wrap: wrap;
+    list-style: none;
+    gap: 50px;
+    padding: 0 30px;
+    margin: 0;
+   
+}
+
+.nav a {
+    text-decoration: none;
+    color: #240d02;
+    font-size: 19px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav a:hover {
+    color: #fff;
+    background-color: #3f2816;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.nav .active {
+    color: rgb(239, 241, 197);
+    font-weight: bold;
+}
+
+.nav .lang-switch a {
+    color: #5eabcf;
+    background-color: #3f2816;
+    font-weight: bold;
+    font-size: 13px;
+    transition: all 0.3s ease;
+}
+
+.nav .lang-switch a:hover {
+    color: #f3924d;
+    background: none;
+    transform: scale(1.05);
+}
+
+
+/* Section Accueil */
+.mienne {
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    background: url("../images/main.jpeg") no-repeat center/cover;
+}
+
+.mienne-text {
+    max-width: 500px;
+    margin-bottom: auto;
+    margin-top: 200px;
+}
+
+.mienne-text h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    
+}
+.mienne-text h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    
+}
+.mienne-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn {
+    background: black;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    display: inline-block;
+    align-items: center;
+    
+}
+
+.btn:hover {
+    background: gray;
+}
+
+
+/* Sections */
+section {
+    padding: 80px 50px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Bio */
+.bio-container {
+    max-width: 900px;
+    margin-top: 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(85, 54, 4, 0.977);
+    line-height: 1.7;
+    color: #222;
+   
+}
+
+.bio-section {
+    margin-bottom: 40px;
+}
+
+.bio-section h1, .bio-section h2 {
+    color: #3f2816;
+    margin-bottom: 15px;
+}
+
+.bio-list {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+.bio-list li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+}

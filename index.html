@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mon Portfolio </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+      
+   <header class="header">
+ 
+        <div class="logo"> Marina Kamel </div>
+    <!-- Burger icon -->
+         <div class="burger" id="burger">
+             <span></span>
+             <span></span>
+             <span></span>
+         </div>
+            <nav class="nav">
+                  <ul>
+                <li> <a href="index.html" class="active">  Acceueil </a> </li>
+                <li> <a href="pages/experiences.html"> Expériences </a> </li>
+                <li><a href="pages/formations.html"> Formations </a> </li>
+                <li> <a href="pages/competences.html"> Compétences</a> </li>
+                <li> <a href="pages/contact.html"> Contact </a> </li>
+                
+                  </ul>
+            </nav>
+            </div>
+   </header>
+   
+   <main>
+ 
+      <section id="accueil" class="about">
+
+        <div class="about-text">
+            <h1>Salut! 👋 </h1>
+            <h2>Je suis Marina,</h2>
+            <p>une développeuse de logiciels basée au Canada, passionnée par la création de solutions web modernes et performantes.</p>
+            <a href="#explore" class="btn"> Découvrir</a>
+        </div>
+      
+    </section>
+   
+    <section id= "explore" class="bio-section">
+      <div class="bio-card animate__animated animate__fadeInUp animate__delay-1s">
+        <h2> <i class="fas fa-user"></i> À propos de moi</h2>
+        <p>
+            Je suis une personne <strong>motivée, curieuse et polyvalente</strong>, 
+            passionnée par les technologies et le développement logiciel. 
+            Avec plus de 5 ans d’expérience en <em>Support Informatique</em> 
+            et en <em>Administration</em>, j’ai acquis une grande adaptabilité et rigueur.
+        </p>
+      </div>
+      <div class="bio-card animate__animated animate__fadeInUp animate__delay-1s">
+            <h2><i class="fas fa-bullseye"></i> Objectif</h2>
+            <p>
+                Mon objectif est de poursuivre ma carrière comme 
+                <strong>Software Developer</strong>, où je pourrai mettre en valeur 
+                mes compétences en <em>développement web (HTML, CSS, JavaScript, React)</em>, 
+                et en travaillant sur des projets collaboratifs innovants.
+           </p>
+      </div>
+   
+      <div class="bio-card animate__animated animate__fadeInUp animate__delay-1s">
+                <h2> <i class="fas fa-lightbulb"></i> Intérêts</h2>
+                <ul class="bio-list">
+                  <li><i class="fas fa-code"></i> Développement Front-End avec React et JavaScript moderne</li>
+                  <li><i class="fas fa-desktop"></i> Conception d’interfaces claires et accessibles</li>
+                  <li><i class="fas fa-rocket"></i> Amélioration continue des performances logicielles</li>
+                  <li><i class="fas fa-people-group"></i> Collaboration dans des projets agiles et innovants</li>
+                </ul>
+      </div>
+      <div style="text-align: center; margin: 40px 0;">
+        <a href="Curriculum vitae/MarinaKamel_CV.pdf" download class="btn" id="download-btn">
+              📥 Télécharger mon CV
+         </a>
+      </div>
+    </section>
+   </main>
+
+<footer>
+  <p>&copy; 2025 - Mon Portfolio</p>
+</footer>
+
+<script>
+
+const burger = document.getElementById("burger");
+const nav = document.querySelector(".nav");
+const navLinks = document.querySelectorAll(".nav a");
+
+burger.addEventListener("click", () => {
+  nav.classList.toggle("active");
+  burger.classList.toggle("toggle");
+});
+
+navLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    nav.classList.remove("active");
+    burger.classList.remove("toggle");
+  });
+});
+
+
+const cards = document.querySelectorAll('.bio-card');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting) {
+      entry.target.classList.add('animate__fadeInUp');
+      observer.unobserve(entry.target); // pour ne pas répéter l'animation
+    }
+  });
+}, { threshold: 0.2 });
+
+cards.forEach(card => {
+  observer.observe(card);
+});
+
+
+const btn = document.getElementById("download-btn");
+btn.addEventListener("click", () => {
+    btn.textContent = "⬇ Téléchargement…";
+    btn.classList.add("downloading");
+   
+
+    setTimeout(() => {
+        btn.textContent = "📥 Télécharger mon CV";
+        btn.classList.remove("downloading");
+    }, 2000); // 2 secondes
+});
+</script>
+
+</body>
+</html>
