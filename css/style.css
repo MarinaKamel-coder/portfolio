@@ -595,12 +595,16 @@ footer {
 
 .about-text h1,
 .about-text h2,
-.about-text p,
-.btn {
-    padding-left: 20px; /* supprimer les gros padding pour mobile */
+.about-text p
+ {
+    padding-left: 20px; 
     text-align: center;
   }
-
+.btn {
+     
+    margin-left: 33%;
+    text-align: center;
+  }
 .bio-section,
 .competences-grid {
     
