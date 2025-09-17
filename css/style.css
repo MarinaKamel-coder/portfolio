@@ -14,7 +14,7 @@ html, body {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background: #f9f7f4;
+  background: linear-gradient(200deg, rgba(143, 143, 143, 0.26), rgba(167, 147, 131, 0.251) );
   color: #333;
   line-height: 1.6;
   display: flex;
@@ -545,6 +545,7 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 15px 20px;
+    background: rgba(113, 91, 81, 0.388);
   }
 
 .burger {
