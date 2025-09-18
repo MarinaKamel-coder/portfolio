@@ -578,7 +578,7 @@ footer {
     flex-direction: column;
     gap: 20px;
   }
-}
+
 .lang-switch a {
     font-size: 12px;
     padding: 4px 8px;
@@ -640,7 +640,7 @@ footer {
     width: 100%;
     z-index: 1000;
   }
-@media (max-width: 480px) {
+
 .about {
     padding-top: 150px; /* moins de padding pour mobile */
     background-position: top center; /* centre le haut de l'image */
@@ -669,5 +669,5 @@ footer {
 .competence-card h3 {
     font-size: 18px;
   }
-}
 
+}
