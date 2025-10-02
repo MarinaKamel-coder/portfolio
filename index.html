@@ -22,11 +22,11 @@
          </div>
             <nav class="nav">
                   <ul>
-                <li> <a href="index.html" class="active">  Acceueil </a> </li>
-                <li> <a href="pages/experiences.html"> Expériences </a> </li>
-                <li><a href="pages/formations.html"> Formations </a> </li>
-                <li> <a href="pages/competences.html"> Compétences</a> </li>
-                <li> <a href="pages/contact.html"> Contact </a> </li>
+                <li> <a href="index.html">  Acceueil </a> </li>
+                <li> <a href="#experiences"> Expériences </a> </li>
+                <li><a href="#formations"> Formations </a> </li>
+                <li> <a href="#competences"> Compétences</a> </li>
+                <li> <a href="#contact"> Contact </a> </li>
                 
                   </ul>
             </nav>
@@ -83,12 +83,176 @@
          </a>
       </div>
     </section>
+
+    <section id="experiences" class="exp">
+      
+      <h3> 💼 Expérience Professionnelle</h3>
+
+        <div class="job-card">
+            <h3>Adjointe Administrative <span>— Fady Mikhael Comptable, Saint-Hubert, QC</span></h3>
+            <p class="date">Mars 2020 – Aujourd’hui</p>
+            <ul>
+                <li>Accueillir et diriger les clients de manière professionnelle.</li>
+                <li>Créer et mettre à jour les dossiers clients.</li>
+                <li>Effectuer des tests sur les bases de données clients.</li>
+                <li>Collaborer à la création d’une page Web.</li>
+                <li>Préparer les factures et gérer les paiements.</li>
+            </ul>
+        </div>
+
+        <div class="job-card">
+            <h3>Spécialiste en Support Informatique <span>— 7G Seven Group Co., Égypte</span></h3>
+            <p class="date">Juin 2018 – Nov. 2019</p>
+            <ul>
+                <li>Répondre aux requêtes des usagers et les documenter.</li>
+                <li>Diagnostiquer postes, applications et réseau à distance.</li>
+                <li>Tester de nouveaux logiciels et appliquer les correctifs.</li>
+                <li>Support de premier niveau aux usagers TI et TIC.</li>
+            </ul>
+        </div>
+
+        <div class="job-card">
+            <h3>Stagiaire en Télécommunication <span>— Orange Égypte</span></h3>
+            <p class="date">Juin 2017 – Sep. 2017</p>
+            <ul>
+                <li>Support technique par téléphone et en personne.</li>
+                <li>Assister à la création d’outils collaboratifs (SharePoint).</li>
+                <li>Participer au déploiement d’applications.</li>
+            </ul>
+        </div>
+    </div>
+  </section>
+   
+
+    <section id="formations" class="formations">
+        <h2>🎓 Formations</h2>
+        
+        <div class="formation-card">
+            <h3>Développement de logiciels</h3>
+            <p class="school">Collège de Maisonneuve, Montréal, QC</p>
+            <p class="date">2025 – 2026</p>
+            <p class="desc">Sécurité des applications mobiles, web et de bureau.</p>
+        </div>
+
+        <div class="formation-card">
+            <h3>React</h3>
+            <p class="school">Udemy</p>
+            <p class="date">2023</p>
+        </div>
+
+        <div class="formation-card">
+            <h3>HTML, CSS et JavaScript</h3>
+            <p class="school">Coursera</p>
+            <p class="date">2022</p>
+        </div>
+
+        <div class="formation-card">
+            <h3>Francisation</h3>
+            <p class="school">Cégep St-Jean-Sur-Richelieu</p>
+            <p class="date">2021 – 2022</p>
+        </div>
+
+        <div class="formation-card">
+            <h3>Baccalauréat en Ingénierie Informatique</h3>
+            <p class="school">Université de Helwan, Égypte</p>
+            <p class="date">2012 – 2018</p>
+        </div>
+    </section>
+
+
+    <section id="competences" class="competences">
+    <h2>⚡ Mes Compétences</h2>
+
+    <div class="competences-grid">
+
+      <div class="competence-card">
+        <h3><i class="fa-solid fa-code"></i> Développement Web</h3>
+        <ul class="skills">
+          <li>HTML5</li>
+          <li>CSS3 </li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>NodeJS</li>
+          <li>Python</li>
+          <li>MYSQL</li>
+          <li>GitHub</li>
+          <li>Bootstrap</li>
+          <li>PHP</li>
+          <li>C++</li>
+        </ul>
+      </div>
+
+      <div class="competence-card">
+        <h3><i class="fa-solid fa-lightbulb"></i> Gestion & Organisation</h3>
+        <ul class="skills">
+          <li>Analyse & résolution de problèmes</li>
+          <li>Gestion de projets (délais, budget, attentes)</li>
+          <li>Organisation et priorisation</li>
+        </ul>
+      </div>
+
+      <div class="competence-card">
+        <h3><i class="fa-solid fa-language"></i> Compétences Pertinentes</h3>
+        <ul class="skills">
+          <li>Langues : Français, Anglais, Arabe</li>
+          <li>Outils : Word, Excel, PowerPoint, Project, Outlook</li>
+          <li>Collaboratifs : SharePoint</li>
+        </ul>
+      </div>
+
+    </div>
+  </section>
+
+
+    <section id="contact" class="contact">
+  <h2>📬 Me Contacter</h2>
+  <p>Vous pouvez me joindre via ce formulaire ou directement par email 📧.</p>
+
+  <form id="contact-form" class="contact-form">
+    <div class="form-group">
+      <label for="name">👤 Nom complet</label>
+      <input type="text" id="name" name="name" placeholder="Votre nom" required>
+    </div>
+
+    <div class="form-group">
+      <label for="email">📧 Email</label>
+      <input type="email" id="email" name="email" placeholder="exemple@email.com" required>
+    </div>
+
+    <div class="form-group full-width">
+      <label for="subject">📌 Sujet</label>
+      <input type="text" id="subject" name="subject" placeholder="Sujet du message" required>
+    </div>
+
+    <div class="form-group full-width">
+      <label for="message">💬 Message</label>
+      <textarea id="message" name="message" rows="6" placeholder="Votre message..." required></textarea>
+    </div>
+
+    <button type="submit" class="button">
+      <span class="btn-text">📨 Envoyer</span>
+      <span class="spinner"></span>
+    </button>
+  </form>
+   <div class="contact-info">
+        <h3>Autres moyens :</h3>
+        <ul>
+          <li>📧 Email : marinakamel909@gmail.com</a></li>
+          <li>📱 Téléphone : +1 (514) 562-6037</li>
+          <li>💼 LinkedIn : <a href="https://www.linkedin.com/in/marina-kamel-a7a08a240/" target="_blank">linkedin.com/MarinaKamel</a></li>
+          <li>🐙 GitHub : <a href="https://github.com/MarinaKamel-coder" target="_blank">github.com/MarinaKamel</a></li>
+        </ul>
+   </div>
+  <p id="form-status" style="text-align:center; margin-top:15px; font-weight:bold;"></p>
+</section>
+
    </main>
 
 <footer>
   <p>&copy; 2025 - Mon Portfolio</p>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 <script>
 
 const burger = document.getElementById("burger");
@@ -134,6 +298,50 @@ btn.addEventListener("click", () => {
         btn.classList.remove("downloading");
     }, 2000); // 2 secondes
 });
+
+
+
+
+  (function() {
+    emailjs.init("AA1fzQFOYTcfTLw04");
+  })();
+
+  const form = document.getElementById("contact-form");
+  const submitBtn = form.querySelector("button");
+  const btnText = submitBtn.querySelector(".btn-text");
+  const spinner = submitBtn.querySelector(".spinner");
+  const formStatus = document.getElementById("form-status");
+
+  form.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    // Activer le spinner et changer le texte
+    btnText.innerText = "Envoi…";
+    spinner.style.display = "inline-block";
+    submitBtn.disabled = true;
+
+    emailjs.sendForm("service_utxcp4n", "template_np5ujmg", this)
+      .then(function() {
+        formStatus.innerText = "✅ Message envoyé avec succès !";
+      }, function(error) {
+        formStatus.innerText = "❌ Erreur lors de l’envoi. Réessayez.";
+        console.log("Erreur :", error);
+      })
+      .finally(() => {
+        // Remise à l'état normal du bouton
+        btnText.innerText = "📨 Envoyer";
+        spinner.style.display = "none";
+        submitBtn.disabled = false;
+
+        // Disparition du message et reset du formulaire après 4 secondes
+        setTimeout(() => {
+          formStatus.innerText = "";
+          form.reset();
+        }, 2000);
+      });
+  });
+
+
 </script>
 
 </body>

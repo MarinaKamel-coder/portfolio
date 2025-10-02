@@ -22,11 +22,11 @@ body {
   min-height: 100vh;
 }
 main {
-  flex: 1;
+  padding-top: 80px;
 }
 /* ========= HEADER ========= */
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   display: flex;
   justify-content: space-between;
@@ -36,6 +36,8 @@ main {
   box-shadow: 0 3px 10px rgba(0,0,0,0.1);
   z-index: 1000;
   backdrop-filter: blur(10px);
+  height: 80px;
+  width: 100%;
 }
 .burger {
     display: none;
@@ -67,6 +69,11 @@ main {
   color: #3f2816;
 }
 
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
 .nav ul {
   list-style: none;
   display: flex;
@@ -83,8 +90,8 @@ main {
   transition: all 0.3s ease;
 }
 
-.nav a:hover,
-.nav .active {
+.nav a:hover
+{
   color: #f3924d;
 }
 
@@ -100,6 +107,12 @@ main {
 .lang-switch a:hover {
   background: #f3924d;
   color: #fff;
+}
+.exp,
+.formations,
+.competences,
+.contact {
+  scroll-margin-top: 80px; /* correspond à la hauteur du header */
 }
 
 /* ========= about ========= */
