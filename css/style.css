@@ -22,7 +22,7 @@ body {
   min-height: 100vh;
 }
 main {
-  padding-top: 80px;
+ padding-top: 80px;
 }
 /* ========= HEADER ========= */
 .header {
@@ -74,6 +74,7 @@ main {
     gap: 30px;
 }
 
+
 .nav ul {
   list-style: none;
   display: flex;
@@ -108,6 +109,7 @@ main {
   background: #f3924d;
   color: #fff;
 }
+
 .exp,
 .formations,
 .competences,
