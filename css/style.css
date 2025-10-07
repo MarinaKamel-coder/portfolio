@@ -110,9 +110,12 @@ main {
   color: #fff;
 }
 
+
+.bio-section,
 .exp,
 .formations,
 .competences,
+.projets,
 .contact {
   scroll-margin-top: 80px; /* correspond à la hauteur du header */
 }
@@ -420,6 +423,96 @@ main {
   margin-right: 8px;
 }
 
+
+/* === SECTION PROJETS === */
+.projets {
+  padding: 80px 10%;
+  max-width: 1100px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.projets h2 {
+  font-size: 2.2em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.projets .intro-text {
+  color: #666;
+  font-size: 1.1em;
+  margin-bottom: 40px;
+}
+
+.projets-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.projet-card {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projet-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.projet-info {
+  padding: 20px;
+  text-align: left;
+}
+
+.projet-info h3 {
+  color: #111;
+  margin-bottom: 10px;
+  font-size: 1.3em;
+}
+
+.projet-info p {
+  color: #555;
+  font-size: 0.95em;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+/* === Uniformiser les boutons Code / Démo === */
+.projet-links {
+  display: flex;
+  justify-content: center;   /* Centre horizontalement */
+  align-items: center;
+  gap: 10px;                 /* Espace entre les boutons */
+  margin-top: 15px;
+}
+
+.btn-projet {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;              /* même largeur pour tous */
+  padding: 8px 0;
+  text-align: center;
+  background: #0078d7;
+  color: white;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.btn-projet.demo {
+  background: #4CAF50;       /* couleur différente pour les démos */
+}
+
+.btn-projet:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
 
 /* Contact Section */
 .contact {
