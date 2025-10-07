@@ -482,6 +482,9 @@ main {
 }
 
 /* === Uniformiser les boutons Code / Démo === */
+i {
+  margin-right: 8px; /* ou la valeur que tu veux */
+}
 .projet-links {
   display: flex;
   justify-content: center;   /* Centre horizontalement */
@@ -506,7 +509,7 @@ main {
 }
 
 .btn-projet.demo {
-  background: #4CAF50;       /* couleur différente pour les démos */
+  background: #2b602d;       /* couleur différente pour les démos */
 }
 
 .btn-projet:hover {
